@@ -1,9 +1,8 @@
 name: Update story metadata
 
 on:
-  push:
-    paths:
-      - "articles.txt"
+  schedule:
+    - cron: "0 3 * * *"
   workflow_dispatch:
 
 permissions:
